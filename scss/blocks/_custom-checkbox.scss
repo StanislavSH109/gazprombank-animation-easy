@@ -9,6 +9,7 @@
   }
 
   &__field {
+    
     &:checked {
       + #{$root}__label::before {
         background-color: $color-royal-blue-1;
@@ -43,6 +44,7 @@
       height: 20px;
       border: 1px solid $color-link-water;
       border-radius: 4px;
+      transition: border $transition-300;
     }
   }
 
@@ -52,6 +54,7 @@
     top: 4px;
     opacity: 0;
     color: $color-summer-sky;
+    transition: opacity $transition-300;
   }
 
   &__text {

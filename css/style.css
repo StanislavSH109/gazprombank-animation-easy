@@ -595,6 +595,7 @@ textarea {
   height: 20px;
   border: 1px solid #C7CED3;
   border-radius: 4px;
+  transition: border ease-in 0.3s;
 }
 .custom-checkbox__icon-check {
   position: absolute;
@@ -602,6 +603,7 @@ textarea {
   top: 4px;
   opacity: 0;
   color: #259DD6;
+  transition: opacity ease-in 0.3s;
 }
 .custom-checkbox__text {
   margin: 0 auto 0 0;
@@ -698,6 +700,7 @@ textarea {
   font-weight: 500;
   gap: 4px;
   line-height: 18px;
+  transition: color ease-in 0.3s;
 }
 .link:hover, .link:focus-visible {
   color: #259DD6;
@@ -720,8 +723,14 @@ textarea {
   font-weight: 600;
   line-height: 16px;
 }
+.link--s svg {
+  transition: transform ease-in 0.3s;
+}
 .link--s:hover, .link--s:focus-visible {
   color: #9D1881;
+}
+.link--s:hover svg, .link--s:focus-visible svg {
+  transform: translateX(50%);
 }
 .link--m {
   font-size: 13px;

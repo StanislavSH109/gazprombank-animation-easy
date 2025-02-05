@@ -6,6 +6,7 @@
   font-weight: 500;
   gap: 4px;
   line-height: 18px;
+  transition: color $transition-300;
 
   &:hover,
   &:focus-visible {
@@ -33,10 +34,19 @@
     font-weight: 600;
     line-height: 16px;
 
+    svg {
+      transition: transform $transition-300;
+    }
+
     &:hover,
     &:focus-visible {
       color: $color-dark-purple;
+
+      svg {
+        transform: translateX(50%);
+      }
     }
+
   }
 
   &--m {
