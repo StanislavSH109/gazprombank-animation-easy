@@ -4,6 +4,7 @@
   position: relative;
   row-gap: 8px;
   $root: &;
+  
 
   &--error {
     #{$root}__field {
@@ -14,6 +15,7 @@
     #{$root}__icon,
     #{$root}__button-icon {
       color: $color-your-pink;
+      
     }
 
     #{$root}__error {
@@ -31,6 +33,8 @@
     line-height: 16px;
     outline: none;
     padding: 0 56px 0 16px;
+    transition: border $transition-300;
+    
 
     &::placeholder {
       color: $color-manatee;
@@ -42,10 +46,12 @@
 
       ~ #{$root}__icon {
         color: $color-free-speech-blue;
+        transform: scale(1.2);
       }
 
       ~ #{$root}__button {
         color: $color-free-speech-blue;
+        transform: scale(1.2);
       }
     }
   }

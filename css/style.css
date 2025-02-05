@@ -640,6 +640,7 @@ textarea {
   line-height: 16px;
   outline: none;
   padding: 0 56px 0 16px;
+  transition: border ease-in 0.3s;
 }
 .custom-input__field::placeholder {
   color: #8F939F;
@@ -649,9 +650,11 @@ textarea {
 }
 .custom-input__field:hover ~ .custom-input__icon, .custom-input__field:focus-visible ~ .custom-input__icon {
   color: #3356D7;
+  transform: scale(1.2);
 }
 .custom-input__field:hover ~ .custom-input__button, .custom-input__field:focus-visible ~ .custom-input__button {
   color: #3356D7;
+  transform: scale(1.2);
 }
 .custom-input__label {
   background-color: #ffffff;
@@ -855,6 +858,7 @@ textarea {
 }
 .advantage-card__icon {
   flex-shrink: 0;
+  transition: transform ease-in 0.3s;
 }
 
 .card-news {
@@ -1009,4 +1013,5 @@ textarea {
   height: 16px;
   margin: 0 0 0 4px;
   width: 16px;
+  transition: transform ease-in 0.3s;
 }/*# sourceMappingURL=style.css.map */
