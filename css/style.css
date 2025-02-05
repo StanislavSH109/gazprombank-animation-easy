@@ -622,6 +622,7 @@ textarea {
 .custom-input--error .custom-input__field {
   background-color: #FFFBFB;
   border-color: #F9C4C2;
+  transition: background-color ease-in 0.3s;
 }
 .custom-input--error .custom-input__icon,
 .custom-input--error .custom-input__button-icon {
@@ -629,6 +630,7 @@ textarea {
 }
 .custom-input--error .custom-input__error {
   display: block;
+  opacity: 1;
 }
 .custom-input__field {
   border: 1px solid #CDCFDE;
@@ -695,6 +697,8 @@ textarea {
   font-size: 12px;
   line-height: 14px;
   margin: 0;
+  opacity: 0;
+  transition: opacity ease-in 0.3s;
 }
 
 .link {

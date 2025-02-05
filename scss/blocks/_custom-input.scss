@@ -9,16 +9,17 @@
     #{$root}__field {
       background-color: $color-snow;
       border-color: $color-your-pink;
+      transition: background-color $transition-300;
     }
 
     #{$root}__icon,
     #{$root}__button-icon {
       color: $color-your-pink;
-      
     }
 
     #{$root}__error {
       display: block;
+      opacity: 1;
     }
   }
 
@@ -98,5 +99,7 @@
     font-size: 12px;
     line-height: 14px;
     margin: 0;
+    opacity: 0;
+    transition: opacity $transition-300;
   }
 }
