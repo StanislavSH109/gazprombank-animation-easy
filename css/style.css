@@ -800,6 +800,7 @@ textarea {
   bottom: 39px;
   left: 148px;
   position: absolute;
+  transition: transform ease-in 0.3s;
 }
 .subscribe-card__btn {
   margin: auto 0 0;
@@ -893,9 +894,11 @@ textarea {
   position: absolute;
   top: 0;
   width: 100%;
+  transition: opacity ease-in 0.3s;
 }
 .card-news__image {
   width: 100%;
+  transition: transform ease-in 0.3s;
 }
 .card-news__content {
   padding: 20px 0 0;

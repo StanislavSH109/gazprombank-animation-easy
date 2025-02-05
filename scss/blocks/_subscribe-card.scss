@@ -29,6 +29,7 @@
     bottom: 39px;
     left: 148px;
     position: absolute;
+    transition: transform $transition-300;
   }
 
   &__btn {

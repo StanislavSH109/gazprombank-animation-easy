@@ -44,10 +44,12 @@
     position: absolute;
     top: 0;
     width: 100%;
+    transition: opacity $transition-300;
   }
 
   &__image {
     width: 100%;
+    transition: transform $transition-300;
   }
 
   &__content {
