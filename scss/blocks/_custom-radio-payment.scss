@@ -26,6 +26,7 @@
 
         &::after {
           background-color: #259DD6;
+          transition: background $transition-300;
         }
       }
     }
@@ -43,6 +44,7 @@
     border: 2px solid $color-solitude;
     cursor: pointer;
     user-select: none;
+    transition: border $transition-300;
 
     &::after {
       content: "";

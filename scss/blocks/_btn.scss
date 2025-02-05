@@ -19,12 +19,12 @@
   &:focus-visible {
     &:not(.btn--xl) {
       background-color: $color-free-speech-blue;
-      transition: background-color $transition-300;
     }
   }
 
   &--xl {
-    background: $color-deep-lilac;
+    background: linear-gradient(270deg, #A96ACF, #6F90D8);
+    background-size: 200% 200%;
     padding: 18px;
     width: 276px;
     font-weight: 700;
@@ -32,12 +32,11 @@
     line-height: 20px;
     letter-spacing: -0.02em;
     border-radius: 16px;
-    transition: background $transition-300;
+    transition: background-position $transition-300;
 
     &:hover,
     &:focus-visible {
-      background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
-      transition: background $transition-300;
+      background-position: 100% 50%;
     }
   }
 

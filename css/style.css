@@ -473,10 +473,10 @@ textarea {
 }
 .btn:hover:not(.btn--xl), .btn:focus-visible:not(.btn--xl) {
   background-color: #3356D7;
-  transition: background-color ease-in 0.3s;
 }
 .btn--xl {
-  background: #9548BD;
+  background: linear-gradient(270deg, #A96ACF, #6F90D8);
+  background-size: 200% 200%;
   padding: 18px;
   width: 276px;
   font-weight: 700;
@@ -484,11 +484,10 @@ textarea {
   line-height: 20px;
   letter-spacing: -0.02em;
   border-radius: 16px;
-  transition: background ease-in 0.3s;
+  transition: background-position ease-in 0.3s;
 }
 .btn--xl:hover, .btn--xl:focus-visible {
-  background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
-  transition: background ease-in 0.3s;
+  background-position: 100% 50%;
 }
 .btn__text {
   position: relative;
@@ -512,6 +511,7 @@ textarea {
 }
 .custom-radio-payment__field:checked + .custom-radio-payment__label::after {
   background-color: #259DD6;
+  transition: background ease-in 0.3s;
 }
 .custom-radio-payment__label {
   position: relative;
@@ -525,6 +525,7 @@ textarea {
   border: 2px solid #E2E4E8;
   cursor: pointer;
   user-select: none;
+  transition: border ease-in 0.3s;
 }
 .custom-radio-payment__label::after {
   content: "";
