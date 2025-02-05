@@ -469,9 +469,11 @@ textarea {
   font-size: 14px;
   line-height: 20px;
   position: relative;
+  transition: background-color ease-in 0.3s;
 }
 .btn:hover:not(.btn--xl), .btn:focus-visible:not(.btn--xl) {
   background-color: #3356D7;
+  transition: background-color ease-in 0.3s;
 }
 .btn--xl {
   background: #9548BD;
@@ -482,9 +484,11 @@ textarea {
   line-height: 20px;
   letter-spacing: -0.02em;
   border-radius: 16px;
+  transition: background ease-in 0.3s;
 }
 .btn--xl:hover, .btn--xl:focus-visible {
   background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+  transition: background ease-in 0.3s;
 }
 .btn__text {
   position: relative;

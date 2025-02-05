@@ -13,11 +13,13 @@
   font-size: 14px;
   line-height: 20px;
   position: relative;
+  transition: background-color $transition-300;
 
   &:hover,
   &:focus-visible {
     &:not(.btn--xl) {
       background-color: $color-free-speech-blue;
+      transition: background-color $transition-300;
     }
   }
 
@@ -30,10 +32,12 @@
     line-height: 20px;
     letter-spacing: -0.02em;
     border-radius: 16px;
+    transition: background $transition-300;
 
     &:hover,
     &:focus-visible {
       background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+      transition: background $transition-300;
     }
   }
 
