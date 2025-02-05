@@ -37,6 +37,7 @@
     margin: 0 0 auto 0;
     padding: 0;
     position: relative;
+    
 
     &::after {
       background-color: $color-royal-blue-1;
@@ -48,6 +49,7 @@
       transform: scale(0, 1);
       transform-origin: left;
       width: 100%;
+      transition: transform $transition-300;
     }
 
     &:hover,
