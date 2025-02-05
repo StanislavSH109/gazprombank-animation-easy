@@ -679,6 +679,7 @@ textarea {
   position: absolute;
   right: 16px;
   top: 10px;
+  transition: transform ease-in 0.3s, color ease-in 0.3s;
 }
 .custom-input__icon {
   color: #8F939F;
@@ -686,6 +687,7 @@ textarea {
   position: absolute;
   right: 16px;
   top: 10px;
+  transition: transform ease-in 0.3s, color ease-in 0.3s;
 }
 .custom-input__error {
   color: #F6514B;

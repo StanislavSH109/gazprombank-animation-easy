@@ -4,7 +4,6 @@
   position: relative;
   row-gap: 8px;
   $root: &;
-  
 
   &--error {
     #{$root}__field {
@@ -34,7 +33,6 @@
     outline: none;
     padding: 0 56px 0 16px;
     transition: border $transition-300;
-    
 
     &::placeholder {
       color: $color-manatee;
@@ -43,10 +41,12 @@
     &:hover,
     &:focus-visible {
       border-color: $color-free-speech-blue;
+      
 
       ~ #{$root}__icon {
         color: $color-free-speech-blue;
         transform: scale(1.2);
+        
       }
 
       ~ #{$root}__button {
@@ -80,6 +80,7 @@
     position: absolute;
     right: 16px;
     top: 10px;
+    transition: transform $transition-300, color $transition-300;
   }
 
   &__icon {
@@ -88,6 +89,7 @@
     position: absolute;
     right: 16px;
     top: 10px;
+    transition: transform $transition-300, color $transition-300;
   }
 
   &__error {
