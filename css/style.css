@@ -475,8 +475,7 @@ textarea {
   background-color: #3356D7;
 }
 .btn--xl {
-  background: linear-gradient(270deg, #A96ACF, #6F90D8);
-  background-size: 200% 200%;
+  background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
   padding: 18px;
   width: 276px;
   font-weight: 700;
@@ -484,10 +483,23 @@ textarea {
   line-height: 20px;
   letter-spacing: -0.02em;
   border-radius: 16px;
-  transition: background-position ease-in 0.3s;
+  position: relative;
+  overflow: hidden;
 }
-.btn--xl:hover, .btn--xl:focus-visible {
-  background-position: 100% 50%;
+.btn--xl::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  background-color: #9548BD;
+  transition: opacity ease-in 0.3s;
+}
+.btn--xl:hover::before, .btn--xl:focus-visible::before {
+  opacity: 1;
 }
 .btn__text {
   position: relative;
